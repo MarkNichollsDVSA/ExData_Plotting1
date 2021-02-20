@@ -14,9 +14,9 @@ epc_data <- epc_raw %>%
 
 
 
-par("mfcol" = c(2, 2))
-png(filename = "plot3.png")
 
+png(filename = "plot4.png")
+par("mfcol" = c(2, 2))
 #top left
 plot(epc_data$date_time, epc_data$Global_active_powe,
      type = "n",
@@ -58,3 +58,4 @@ lines(epc_data$date_time, epc_data$Global_reactive_power)
 
 
 dev.off()
+
